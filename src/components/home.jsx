@@ -54,7 +54,7 @@ export default function Home(props) {
 
     } else {
 
-      setTarefas([...tarefas, tarefa])
+      setTarefas(tarefas? [...tarefas, tarefa] : [])
       setTarefa("")
       setTarefasSalvas(tarefas)
 
