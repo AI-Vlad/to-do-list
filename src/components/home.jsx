@@ -14,7 +14,7 @@ export default function Home(props) {
 
   useEffect(() => {
     function setarTarefas() {
-      if (tarefasSalvas.length < tarefas.length) {
+      if (tarefasSalvas?.length < tarefas?.length) {
         localStorage.setItem('tarefasSalvas', JSON.stringify(tarefas))
       }
     }
